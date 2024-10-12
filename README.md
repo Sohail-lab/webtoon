@@ -15,3 +15,6 @@ The favorites page can be navigated by clicking the favorites page icon on top r
 The favorites page has a list of favorite items and can be removed by clicking on remove from favorite button beside each item.
 When clicked on any item it opens the item details page. The details page has a Thumbnail, Title of webtoon, Description and an **add to favorites button**
 The design is kept simple cause I could not find a suitable color palette.
+
+
+There is also an android app built ready named **install-android.apk**
