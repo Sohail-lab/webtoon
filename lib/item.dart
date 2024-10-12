@@ -53,6 +53,7 @@ class _ToonListItemState extends State<ToonListItem> {
     }
   }
 
+  // when the favorite variable changes value (either true or false)
   void favoriteChange() {
     if (widget.item.isFavorite) {
       favoritesBox.delete(widget.item.itemNumber);
