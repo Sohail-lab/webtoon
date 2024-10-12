@@ -111,6 +111,7 @@ class _ItemDetailsState extends State<ItemDetails> {
                 ],
               ),
             ),
+            // add to favorites button
             ElevatedButton(
               child: Text(
                   isFavorite ? 'Remove from favorites' : 'Add to favorites'),
