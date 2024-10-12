@@ -80,6 +80,7 @@ class _HomePageState extends State<HomePage> {
     ),
   ];
 
+  // load last saved ratings
   void _loadRatings() {
     var box = Hive.box('ratings');
     for (var item in ListItems) {
@@ -89,15 +90,15 @@ class _HomePageState extends State<HomePage> {
     setState(() {});
   }
 
+  // save ratings
   void _saveRating(String title, double rating) {
     var box = Hive.box('ratings');
     box.put(title, rating);
   }
 
   void loadItems() {
-    // Load items from Hive or your source
+    // Load items from Hive
     final favoritesBox = Hive.box<Item>('favorites');
-    // Populate your items here
     ListItems.forEach((item) {
       item.isFavorite = favoritesBox.containsKey(item.itemNumber);
     });
